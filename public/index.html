@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <style>
+        body,
+        html {
+            height: 100%;
+        }
+        
+        .center-container {
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body class="bg-dark">
+    <div class="container text-white d-flex flex-column justify-content-center align-items-center center-container text-center">
+        <h1 class="mb-4">🪸</h1>
+        <h1 class="mb-4">Welcome to Our community</h1>
+        <!-- start of Modal -->
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal"> Create a new Post</button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Please fill out the form</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- start of from  -->
+                        <form action="/posts" method="POST" style="max-width: 400px; width: 100%;">
+                            <div class="mb-3 text-start">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Your name">
+                            </div>
+                            <div class="mb-3 text-start">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="your@email.com">
+                            </div>
+                            <div class="mb-3 text-start">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea name="message" class="form-control" id="message" rows="3" placeholder="Your message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Create a new Post</button>
+                        </form>
+                        <!-- end of form  -->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Skip & Close</button>
+                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of modal  -->
+
+    </div>
+
+
+    <!-- posts  -->
+    <div class="container text-white d-flex flex-column justify-content-center align-items-center  text-center">
+        <h1 class="mb-4">🪸</h1>
+        <h1 class="mb-4"> Public Posts</h1>
+
+
+
+    </div>
+
+    <div class="container border border-info text-white d-flex flex-column justify-content-center align-items-center  text-center">
+
+        <h5> message - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, consequatur.</h5>
+        <p>Post by -Lorem, ipsum dolor <span class="text-warning">email @email.com</span> </p>
+
+
+    </div>
+
+    <!-- end of posts  -->
+
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+
+</html>
