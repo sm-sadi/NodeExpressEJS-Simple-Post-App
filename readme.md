@@ -24,11 +24,4 @@ A minimal web application where users can create and view posts. Built using **N
 
 ## 📁 Project Structure
 
-simple-post-app/
-├── views/ # EJS templates
-│ └── posts.ejs
-├── public/ # Static files
-│ └── index.html
-├── app.js # Main Express app
-├── package.json
-└── README.md
+<img width="258" height="219" alt="image" src="https://github.com/user-attachments/assets/153958aa-5724-41b1-8ae7-b90e8f818948" />
